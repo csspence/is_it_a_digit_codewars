@@ -2,6 +2,6 @@
 Implement String#digit? (in Java StringUtils.isDigit(String)), which should return true if given object is a digit (0-9), false otherwise.
 */
 
-String.prototype.digit = function() {
-  return false;
+String.prototype.digit = function(string) {
+  return Number(string) * 1 === Number(string) && Number(string) < 10 ? true : false;
 };
